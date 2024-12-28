@@ -13,15 +13,15 @@ Topics around how to name variables - should they be concise, long and descripti
 
 2. **Concise is better than verbose in most situations**.  IMO, Concise code is easier to read and easier to understand.  Having variables with names often used in languages like Python, for example `pointer_to_head_of_buffer` can often be replaced with things like `buff_ptr` to improve the readability of code.  Also, having to scroll right on code is a massive turn off.  If a line of code cannot fit within 60-80 characters it's normally a red flag.
 
-3. **On initializing variables**.  Some software engineers have strong opinions on if variable declaration should be independent of variable initialization.  For example, which one do you think is better:
+3.  **On initializing variables**.  Some software engineers have strong opinions on if variable declaration should be independent of variable initialization.  For example, which one do you think is better:
 
-  ```c
-  void my_fun(){
-    int x;
+    ```c
+    void my_fun(){
+        int x;
 
-    x = 5;
-  }
-  ```
+        x = 5;
+    }
+    ```
 versus
 ```c
 void my_fun(){
