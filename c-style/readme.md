@@ -31,8 +31,7 @@ Topics around how to name variables - should they be concise, long and descripti
     ```
     The first example treats variable initialization and creation as separate activities.  There is merit to this approach; however, it can also be error prone.  I personally favor the second approach where it is very clear that not only am I intending to create a variable, but I want its initial value defined as well.
 
-4.   **Useless and "over" documentation**.  Somewhere in teaching programming history some educators started instilling in students that every line of code needs to be documented.  IMO, this is a ridiculous and counter-productive practice. This makes the code much harder to read.  Also, documentation is often not maintained and updated as code is maintained.  This results in useless and confusing artifacts being left in the source code.  My advice on this is to first assume that anybody reading your code understands the programming language, and whenever possible writing clear code that is **self documenting**.  Consider the following example:
-
+4.  **Useless and "over" documentation**.  Somewhere in teaching programming history some educators started instilling in students that every line of code needs to be documented.  IMO, this is a ridiculous and counter-productive practice. This makes the code much harder to read.  Also, documentation is often not maintained and updated as code is maintained.  This results in useless and confusing artifacts being left in the source code.  My advice on this is to first assume that anybody reading your code understands the programming language, and whenever possible writing clear code that is **self documenting**.  Consider the following example:
     ```c
     int my_strlen(char *str){
         int l = 0;
