@@ -15,13 +15,13 @@ Topics around how to name variables - should they be concise, long and descripti
 
 3. **On initializing variables**.  Some software engineers have strong opinions on if variable declaration should be independent of variable initialization.  For example, which one do you think is better:
 
-```c
-void my_fun(){
+  ```c
+  void my_fun(){
     int x;
 
     x = 5;
-}
-```
+  }
+  ```
 versus
 ```c
 void my_fun(){
