@@ -22,7 +22,7 @@ Topics around how to name variables - should they be concise, long and descripti
         x = 5;
     }
     ```
-versus
+    versus
 
     ```c
     void my_fun(){
@@ -42,7 +42,7 @@ The first example treats variable initialization and creation as separate activi
         return l;
     }
     ```
-versus
+    versus
 
     ```c
     int my_strlen(char *str){
@@ -73,7 +73,7 @@ These comments are obvious and distracting.
     ```c
     int* i;
     ```
-versus
+    versus
 
     ```c
     int *i;
