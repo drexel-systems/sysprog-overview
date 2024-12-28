@@ -33,27 +33,27 @@ Topics around how to name variables - should they be concise, long and descripti
 
 4   **Useless and "over" documentation**.  Somewhere in teaching programming history some educators started instilling in students that every line of code needs to be documented.  IMO, this is a ridiculous and counter-productive practice. This makes the code much harder to read.  Also, documentation is often not maintained and updated as code is maintained.  This results in useless and confusing artifacts being left in the source code.  My advice on this is to first assume that anybody reading your code understands the programming language, and whenever possible writing clear code that is **self documenting**.  Consider the following example:
 
-    ```c
-    int my_strlen(char *str){
-        int l = 0;
-        while (!*(str+l)){
-            l++;
-        }
-        return l;
+```c
+int my_strlen(char *str){
+    int l = 0;
+    while (!*(str+l)){
+        l++;
     }
-    ```
+    return l;
+}
+```
     
-    versus
+versus
 
-    ```c
-    int my_strlen(char *str){
-        int l = 0;
-        while (*(str+l) != '\0'){
-            l++;
-        }
-        return l;
+```c
+int my_strlen(char *str){
+    int l = 0;
+    while (*(str+l) != '\0'){
+        l++;
     }
-    ```
+    return l;
+}
+```
 
     The second version seems much easier to read, the first version should have a comment on the loop body to explain what is going on.
 
