@@ -6,7 +6,7 @@
 
 ## How to Git* Video Guide
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/qHJv_WulwmI/0.jpg)](https://www.youtube.com/watch?v=qHJv_WulwmI)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bmlH3jiAscc/0.jpg)](https://www.youtube.com/watch?v=bmlH3jiAscc)
 
 
 
