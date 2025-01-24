@@ -17,20 +17,28 @@ Commands:
   launch       Set up the local .vscode folder with necessary configuration
 ```
 
-# using locally
+# how to install
 
-Download `./scripts/sysprog.sh` and place in your local path (`/usr/local/bin` for example), or some location you would like to explicitly run it from.
+Option 1 - Copy the script out of [scripts/sysprog.sh](scripts/sysprog.sh) to anywhere in your path on your local system (like /usr/local/bin).
 
-# using remotely
+Option 2 - Curl it and run from anywhere - up to you where you place the script and how you access it
 
-You can run remotely with curl - here is the `list` example:
+Example of option 1:
 
 ```sh
-curl -sSL https://raw.githubusercontent.com/drexel-systems/sysprog-overview/main/scripts/sysprog.sh | sh -s -- list
+curl -sSL -o sysprog.sh https://raw.githubusercontent.com/drexel-systems/sysprog-overview/main/scripts/sysprog.sh
+cp sysprog.sh /usr/local/bin
+# or you could just run it like this from wherever you downloaded it:
+./sysprog.sh
 ```
 
-Output:
-```
+Example usages:
+
+```sh
+# excute
+sysprog.sh list
+
+# outputs:
 Fetching assignements list curl -s  https://api.github.com/repos/drexel-systems/SysProg-Class/contents/assignments ...
     0-Warmup
     1-C-Refresher
@@ -38,15 +46,11 @@ Fetching assignements list curl -s  https://api.github.com/repos/drexel-systems/
     2-StudentDB
 ```
 
-Pull example:
-
 ```sh
-curl -sSL https://raw.githubusercontent.com/drexel-systems/sysprog-overview/main/scripts/sysprog.sh | sh -s -- pull 2-StudentDB
-```
+# execute
+sysprog.sh pull 2-StudentD
 
-output:
-
-```sh
+# outputs:
 Fetching assignment 2-StudentDB from https://api.github.com/repos/drexel-systems/SysProg-Class/git/trees/main?recursive=1...
     Downloading file: 2-StudentDB/.gitignore
     Downloading file: 2-StudentDB/a2-directions.md

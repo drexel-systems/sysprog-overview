@@ -92,12 +92,12 @@ pull_command() {
         content=$(curl -s $(get_auth_header) "$blob_url" | jq -r '.content')
         encoding=$(curl -s $(get_auth_header) "$blob_url" | jq -r '.encoding')
 
-        # if [ "$encoding" = "base64" ]; then
+        if [ "$encoding" = "base64" ]; then
             mkdir -p "$(dirname "$local_path")" # Ensure the target directory exists
             echo "$content" | base64 -d > "$local_path" # Decode and save the file content
-        # else
-        #     echo "    Warning: Unexpected encoding ($encoding) for file $local_path"
-        # fi
+        else
+            echo "    Warning: Unexpected encoding ($encoding) for file $local_path; contents: $content"
+        fi
     done
 
     echo "Download completed for assignment: $assignment_name"
