@@ -27,6 +27,7 @@ Example of option 1:
 
 ```sh
 curl -sSL -o sysprog.sh https://raw.githubusercontent.com/drexel-systems/sysprog-overview/main/scripts/sysprog.sh
+chmod +x sysprog.sh
 cp sysprog.sh /usr/local/bin
 # or you could just run it like this from wherever you downloaded it:
 ./sysprog.sh
