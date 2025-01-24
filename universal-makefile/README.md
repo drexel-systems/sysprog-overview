@@ -1,6 +1,6 @@
 # universal makefile & vscode debug config
 
-There two useful things in this folder:
+There two useful things in this repo:
 
 1. Universal `makefile` - place this makefile **in the same folder as your *.c files** - it will discover and build each *.c file
 2. Universal `make` build + `gdb` integrated debugging in vscode (see instructions below on how to use)
@@ -14,8 +14,8 @@ There two useful things in this folder:
 # universal gdb debugging - setup
 
 - your code folder needs the makefile described above - do that first
-- you need make, gcc, gdb - if they are not found run `sudo apt update && sudo apt install make gcc gdb -y`
-- copy the two files from `.vscode/` in this folder (`launch.json` and `tasks.json`) into `.vscode/` **in the root of your vscode worksapce**
+- you need make, gcc, gdb - if they are not found run `sudo apt update && sudo apt install make gcc gdb jq curl -y`
+- copy the two files from `.vscode/` in the **ROOT OF THIS REPO** (`launch.json` and `tasks.json`) into `.vscode/` **in the root of your vscode worksapce**
 - for example, using the same example above for `cs503/week2`, you would place these files in `cs503/.vscode`
 - if the `.vscode` folder does not exist, create it
 - **IMPORTANT** - note there is a `.` at the beginning of the folder name
