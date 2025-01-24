@@ -44,6 +44,34 @@ Pull example:
 curl -sSL https://raw.githubusercontent.com/drexel-systems/sysprog-overview/main/scripts/sysprog.sh | sh -s -- pull 2-StudentDB
 ```
 
+output:
+
+```sh
+Fetching assignment 2-StudentDB from https://api.github.com/repos/drexel-systems/SysProg-Class/git/trees/main?recursive=1...
+    Downloading file: 2-StudentDB/.gitignore
+    Downloading file: 2-StudentDB/a2-directions.md
+    Downloading file: 2-StudentDB/a2-questions.md
+    Downloading file: 2-StudentDB/dblayout.png
+    Downloading file: 2-StudentDB/readme.md
+    Downloading file: 2-StudentDB/starter/db.h
+    Downloading file: 2-StudentDB/starter/dblayout.png
+    Downloading file: 2-StudentDB/starter/makefile
+    Downloading file: 2-StudentDB/starter/sdbsc.c
+    Downloading file: 2-StudentDB/starter/sdbsc.h
+    Downloading file: 2-StudentDB/starter/test.sh
+    Downloading file: 2-StudentDB/starter/testload.sh
+Download completed for assignment: 2-StudentDB
+
+========================================================================================
+* Review 2-StudentDB/readme.md for instructions on how to complete the assignment 
+*
+* Happy coding! For assitance, please reach out via discord:                           
+*
+*            https://discord.com/channels/798568353689501758/1324393213850681394       
+*
+========================================================================================
+```
+
 # how to use launch config
 
 Run `sysprog.sh launch` from the root of your personal cs503 git repo. It will create these files:
